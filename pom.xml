@@ -56,13 +56,10 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
-                        <Bundle-Activator>can4isr.server.smx.security.Activator</Bundle-Activator>
-                        <Export-Package>
-                            ca.logisphere.smx.security*;version=${project.version}
+                        <Bundle-Activator>ca.logisphere.smx.security.Activator</Bundle-Activator>
+                        <Export-Package>ca.logisphere.smx.security*;version=${project.version}
                         </Export-Package>
-                        <Import-Package>
-                            *
-                        </Import-Package>                                                    
+                        <Import-Package>*</Import-Package>                                                    
                     </instructions>
                 </configuration>
             </plugin>
