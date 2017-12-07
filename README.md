@@ -1,5 +1,6 @@
 # smx-security
-JAAS WindowsLoginModule OSGi Bundle for ServiceMix (Karaf)
+Waffle-based JAAS WindowsLoginModule OSGi Bundle for ServiceMix (Karaf)
+Waffle is basically a wrapper for the JNA calls to SSPI. For more details see: https://github.com/Waffle/waffle
 
 `mvn clean install`
 
