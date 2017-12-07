@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.apache.karaf.jaas</groupId>
             <artifactId>org.apache.karaf.jaas.boot</artifactId>
-            <version>2.4.3</version>
+            <version>4.0.9</version>
             <type>jar</type>
         </dependency>
     </dependencies>
@@ -57,9 +57,9 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
                         <Bundle-Activator>ca.logisphere.smx.security.Activator</Bundle-Activator>
-                        <Export-Package>ca.logisphere.smx.security*;version=${project.version}
-                        </Export-Package>
-                        <Import-Package>*</Import-Package>                                                    
+                        <Private-Package>ca.logisphere.smx.*, waffle.*, com.sun.jna.*</Private-Package>
+                        <Export-Package>ca.logisphere.smx.security.*;version=${project.version}</Export-Package>
+                        <Import-Package>*</Import-Package>                                                                            
                     </instructions>
                 </configuration>
             </plugin>
